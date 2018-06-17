@@ -47,7 +47,7 @@ if(isset($error)){
 				<tr>
 					<td colspan="2" style="color:red;">We couldn't find this email/password combination. </td>
 				</tr>
-				<tr/>
+				<br/>
 <?
 }
 ?>
