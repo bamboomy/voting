@@ -45,7 +45,7 @@ if(isset($_POST['email'])){
 if(isset($error)){
 ?>			
 				<tr>
-					<td colspan="2">We couldn't find this email/password combination. </td>
+					<td colspan="2" style="color:red;">We couldn't find this email/password combination. </td>
 				</tr>
 <?
 }
