@@ -42,7 +42,25 @@ if($result->num_rows > 0){
 ?>
 			<tr>
 				<td><? echo $row['name'];?></td>
+<?
+		$sql="select id from userVote where uId = '".$_SESSION['id']."' and eId = '".$row['id']."';";
+		
+		$result2 = $conn->query($sql);
+		
+		if($result2->num_rows == 0){
+?>
 				<td style="color:green;">+1</td>
+<?
+		}else if($result2->num_rows == 1){
+?>
+				<td style="color:red;">-1</td>
+<?
+		}else{
+?>
+				<td/>
+<?
+		}
+?>				
 				<td>0</td>
 			</tr>
 <?
