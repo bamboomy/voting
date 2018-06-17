@@ -26,7 +26,7 @@ if(isset($_POST['email'])){
 		
 		$_SESSION['id'] = $row['id'];
 
-		header("Location: technologies.html");
+		header("Location: technologies.php");
 		
 		die;
 	}
