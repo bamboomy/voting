@@ -13,7 +13,7 @@
 			</tr>
 			<tr>
 				<td>Python</td>
-				<td style="color:green;">+1</td>
+				<td style="color:red;">-1</td>
 				<td>0</td>
 			</tr>
 		</table>
