@@ -1,3 +1,20 @@
+<?php
+
+session_start();
+
+// Create connection
+include_once("settings.php");
+include_once("aid.php");
+	
+// Check connection
+if ($conn->connect_error) {
+
+	header("Location: errorPage.php");
+
+	die;
+} 
+
+?>
 <html>
 <body>
 	<center>
