@@ -49,7 +49,7 @@ if($result->num_rows > 0){
 		
 		if($result2->num_rows == 0){
 ?>
-				<td style="color:green;">+1</td>
+				<td style="color:green;" onclick="window.location.assign('vote.php')">+1</td>
 <?
 		}else if($result2->num_rows == 1){
 ?>
