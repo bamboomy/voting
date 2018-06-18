@@ -62,7 +62,12 @@ if($result->num_rows > 0){
 		}
 		
 		$sql="select count(id) from userVote where eId = '".$row['id']."' group by uId;";
-		
+
+		if ($conn->query($sql) !== TRUE) {
+			
+			echo $conn->error;
+		}
+			
 		$result3 = $conn->query($sql);
 		
 		$row = $result3->fetch_assoc()
