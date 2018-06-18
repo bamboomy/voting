@@ -82,7 +82,7 @@ if($result->num_rows > 0){
 }
 ?>
 			<tr>
-				<td>Add entry</td><td/>
+				<td style="text-decoration: underline;">Add entry</td><td/>
 			</tr>
 		</table>
 	</center>
