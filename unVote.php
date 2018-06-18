@@ -21,7 +21,7 @@ if ($conn->connect_error) {
 	die;
 } 
 
-$sql="delete from userVote where VALUES uId = '".$_SESSION['id']."' and eId = '".$_GET['id']."';";
+$sql="delete from userVote where uId = '".$_SESSION['id']."' and eId = '".$_GET['id']."';";
 
 if ($conn->query($sql) !== TRUE) {
 	
