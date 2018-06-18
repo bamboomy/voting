@@ -23,7 +23,16 @@ if(isset($_POST['email'])){
 	if($result->num_rows == 1){
 		
 		$row = $result->fetch_assoc();
+
+		$sql = "update users set timestamp = current_timestamp where id = '".$row['id']."';"
 		
+		if ($conn->query($sql) !== TRUE) {
+			
+			echo "fail";
+			
+			die;
+		}
+
 		$_SESSION['id'] = $row['id'];
 
 		header("Location: technologies.php");
