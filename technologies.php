@@ -33,6 +33,8 @@ $result = $conn->query($sql);
 		function show(){
 			
 			$("#entry").html("<input type='text' />");
+			
+			$("#button").html("<button type='submit'>Add</button>");
 		}
 	</script>
 </head>
@@ -91,8 +93,8 @@ if($result->num_rows > 0){
 }
 ?>
 			<tr>
-				<form>
-				<td style="text-decoration: underline;" id="entry" onclick="show();">Add entry</td><td id="button"/>
+				<form action="add.php" method="post">
+					<td style="text-decoration: underline;" id="entry" onclick="show();">Add entry</td><td id="button"/>
 				</form>
 			</tr>
 		</table>
