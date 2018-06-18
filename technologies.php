@@ -65,10 +65,18 @@ if($result->num_rows > 0){
 
 		$result3 = $conn->query($sql);
 		
-		$row = $result3->fetch_assoc();
+		if($result3->num_rows == 0){
+?>
+				<td>0</td>			
+<?			
+		}else{
+				$row = $result3->fetch_assoc();
 ?>				
 				<td><? echo $row['count(id)']; ?></td>
-			</tr>
+<?
+		}
+?>
+				</tr>
 <?
 	}
 }
