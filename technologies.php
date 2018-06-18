@@ -34,7 +34,7 @@ $result = $conn->query($sql);
 			
 			$("#link").hide();
 			
-			$("#name").atrr("type", "text");
+			$("#name").prop("type", "text");
 			
 			$("#button").html("<button type='submit'>Add</button>");
 			
