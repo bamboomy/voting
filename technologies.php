@@ -38,7 +38,7 @@ $result = $conn->query($sql);
 				type: 'text',
 				id: 'entry',
 				name: 'entry'
-			}).appendTo($("#entry"));
+			}).appendTo($("#target"));
 			
 			$("#button").html("<button type='submit'>Add</button>");
 			
