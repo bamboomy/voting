@@ -25,7 +25,7 @@ $sql="delete from userVote where VALUES uId = '".$_SESSION['id']."' and eId = '"
 
 if ($conn->query($sql) !== TRUE) {
 	
-	echo "fail";
+	echo "fail:".$sql;
 	
 	die;
 }
