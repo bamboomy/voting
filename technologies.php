@@ -32,7 +32,7 @@ $result = $conn->query($sql);
 	<script>
 		function show(){
 			
-			$("#entry").html("<input type='text' name='entry' />");
+			$("#entry").html("<input type='text' name='entry' id='entry' />");
 			
 			$("#button").html("<button type='submit'>Add</button>");
 			
