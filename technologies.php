@@ -52,9 +52,9 @@ if($result->num_rows > 0){
 			echo "<td style=\"color:green;\" onclick=\"window.location.assign('vote.php?id=".$row['id']."')\">+1</td>";
 
 		}else if($result2->num_rows == 1){
-?>
-				<td style="color:red;">-1</td>
-<?
+
+			echo "<td style=\"color:red;\" onclick=\"window.location.assign('unVote.php?id=".$row['id']."')\">-1</td>";
+
 		}else{
 ?>
 				<td/>
