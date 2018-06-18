@@ -32,7 +32,7 @@ $result = $conn->query($sql);
 	<script>
 		function show(){
 			
-			alert("booja");
+			$("#entry").html("<input type='text' />");
 		}
 	</script>
 </head>
