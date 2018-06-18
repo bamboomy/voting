@@ -61,7 +61,7 @@ if($result->num_rows > 0){
 <?
 		}
 		
-		$sql="select count(id) from userVote where eId = '".$row['id']."' group by uId;";
+		$sql="select count(id), uId from userVote where eId = '".$row['id']."' group by uId;";
 
 		$result3 = $conn->query($sql);
 		
