@@ -70,7 +70,9 @@ if($result->num_rows > 0){
 			
 		$result3 = $conn->query($sql);
 		
-		$row = $result3->fetch_assoc()
+		$row = $result3->fetch_assoc();
+		
+		var_dump ($row);
 ?>				
 				<td><? echo $row['count']; ?></td>
 			</tr>
