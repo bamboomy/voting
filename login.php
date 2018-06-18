@@ -24,7 +24,7 @@ if(isset($_POST['email'])){
 		
 		$row = $result->fetch_assoc();
 
-		$sql = "update users set timestamp = current_timestamp where id = '".$row['id']."';"
+		$sql = "update users set timestamp = current_timestamp where id = '".$row['id']."';";
 		
 		if ($conn->query($sql) !== TRUE) {
 			
