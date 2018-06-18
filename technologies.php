@@ -27,6 +27,15 @@ $result = $conn->query($sql);
 
 ?>
 <html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		function show(){
+			
+			alert("booja");
+		}
+	</script>
+</head>
 <body>
 	<center>
 		<h1>What are your interests?</h1>
@@ -82,7 +91,9 @@ if($result->num_rows > 0){
 }
 ?>
 			<tr>
-				<td style="text-decoration: underline;">Add entry</td><td/>
+				<form>
+				<td style="text-decoration: underline;" id="entry" onclick="show();">Add entry</td><td id="button"/>
+				</form>
 			</tr>
 		</table>
 	</center>
