@@ -72,7 +72,7 @@ if($result->num_rows > 0){
 		}else{
 				$row = $result3->fetch_assoc();
 ?>				
-				<td><? echo $row['count(id)']; ?></td>
+				<td><? echo $row['count(DISTINCT uId)']; ?></td>
 <?
 		}
 ?>
