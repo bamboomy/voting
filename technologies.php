@@ -94,7 +94,7 @@ if($result->num_rows > 0){
 ?>
 			<tr>
 				<form action="add.php" method="post">
-					<td style="text-decoration: underline;" id="entry" onclick="show();">Add entry</td><td/><td id="button"/>
+					<td id="entry"><a onclick="show();" href="#">Add entry</a></td><td/><td id="button"/>
 				</form>
 			</tr>
 		</table>
