@@ -35,6 +35,10 @@ $result = $conn->query($sql);
 			$("#entry").html("<input type='text' />");
 			
 			$("#button").html("<button type='submit'>Add</button>");
+			
+			$("#button").on( "click", function() {
+				$( "#target" ).submit();
+			});
 		}
 	</script>
 </head>
@@ -93,7 +97,7 @@ if($result->num_rows > 0){
 }
 ?>
 			<tr>
-				<form action="add.php" method="post">
+				<form action="add.php" method="post" id="target">
 					<td id="entry"><a onclick="show();" href="#">Add entry</a></td><td/><td id="button"/>
 				</form>
 			</tr>
