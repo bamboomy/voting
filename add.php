@@ -21,7 +21,7 @@ if ($conn->connect_error) {
 	die;
 } 
 
-$sql="insert into entry (name, addedBy) VALUES ('".test_input($_POST['entry'])."', '".$_SESSION['id']."');";
+$sql="insert into entry (name, addedBy) VALUES ('".test_input($_POST['name'])."', '".$_SESSION['id']."');";
 
 if ($conn->query($sql) !== TRUE) {
 	

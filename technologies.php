@@ -36,8 +36,8 @@ $result = $conn->query($sql);
 			
 			$('<input>').attr({
 				type: 'text',
-				id: 'entry',
-				name: 'entry'
+				id: 'name',
+				name: 'name'
 			}).appendTo($("#target"));
 			
 			$("#button").html("<button type='submit'>Add</button>");
@@ -104,7 +104,8 @@ if($result->num_rows > 0){
 ?>
 			<tr>
 				<form action="add.php" method="post" id="target">
-					<td id="entry"><a onclick="show();" href="#">Add entry</a></td><td/><td id="button"/>
+					<td id="entry"><a onclick="show();" href="#">Add entry</a><input</td>
+					<td/><td id="button"/>
 				</form>
 			</tr>
 		</table>
